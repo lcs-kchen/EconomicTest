@@ -18,7 +18,8 @@
 		842B076D2F8E71E7002ADA46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		842B076E2F8E71E7002ADA46 /* Economic_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Economic_TestApp.swift; sourceTree = "<group>"; };
 		842B07752F8E7374002ADA46 /* QuestionAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswer.swift; sourceTree = "<group>"; };
-		842B07762F8E738F002ADA46 /* EconomicTermViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomicTermViewModel.swift; sourceTree = "<group>"; };
+		842B07762F8E738F002ADA46 /* QuestionAnswerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerViewModel.swift; sourceTree = "<group>"; };
+		842B07772F8E7896002ADA46 /* AnswerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +72,8 @@
 		842B07742F8E72E0002ADA46 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				842B07762F8E738F002ADA46 /* EconomicTermViewModel.swift */,
+				842B07772F8E7896002ADA46 /* AnswerListViewModel.swift */,
+				842B07762F8E738F002ADA46 /* QuestionAnswerViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -113,7 +115,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 842B07592F8E71B9002ADA46 /* Build configuration list for PBXProject "Economic Test" */;
+			buildConfigurationList = 842B07592F8E71B9002ADA46 /* Build configuration list for PBXProject "Math Test" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -344,7 +346,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		842B07592F8E71B9002ADA46 /* Build configuration list for PBXProject "Economic Test" */ = {
+		842B07592F8E71B9002ADA46 /* Build configuration list for PBXProject "Math Test" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				842B07672F8E71BD002ADA46 /* Debug */,

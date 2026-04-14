@@ -2,11 +2,11 @@
 import Foundation
 
 struct Question: Identifiable {
-    let id: Int
+    let id = UUID()
     let text: String
 }
 
 struct Answer: Identifiable {
-    let id: Int
+    let id = UUID()
     let text: String
 }
