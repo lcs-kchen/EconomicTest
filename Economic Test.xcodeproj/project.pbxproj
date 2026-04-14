@@ -6,17 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		842B07702F8E71E7002ADA46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B076D2F8E71E7002ADA46 /* ContentView.swift */; };
+		842B07712F8E71E7002ADA46 /* Economic_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B076E2F8E71E7002ADA46 /* Economic_TestApp.swift */; };
+		842B07722F8E71E7002ADA46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842B076C2F8E71E7002ADA46 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		842B075E2F8E71B9002ADA46 /* Economic Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Economic Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		842B076C2F8E71E7002ADA46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		842B076D2F8E71E7002ADA46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		842B076E2F8E71E7002ADA46 /* Economic_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Economic_TestApp.swift; sourceTree = "<group>"; };
+		842B07752F8E7374002ADA46 /* EconomicTerm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomicTerm.swift; sourceTree = "<group>"; };
+		842B07762F8E738F002ADA46 /* EconomicTermViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomicTermViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		842B07602F8E71B9002ADA46 /* Economic Test */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Economic Test";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		842B075B2F8E71B9002ADA46 /* Frameworks */ = {
@@ -32,7 +35,9 @@
 		842B07552F8E71B9002ADA46 = {
 			isa = PBXGroup;
 			children = (
-				842B07602F8E71B9002ADA46 /* Economic Test */,
+				842B07742F8E72E0002ADA46 /* ViewModel */,
+				842B07732F8E72D4002ADA46 /* Model */,
+				842B076F2F8E71E7002ADA46 /* EconomicTest */,
 				842B075F2F8E71B9002ADA46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +48,32 @@
 				842B075E2F8E71B9002ADA46 /* Economic Test.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		842B076F2F8E71E7002ADA46 /* EconomicTest */ = {
+			isa = PBXGroup;
+			children = (
+				842B076C2F8E71E7002ADA46 /* Assets.xcassets */,
+				842B076D2F8E71E7002ADA46 /* ContentView.swift */,
+				842B076E2F8E71E7002ADA46 /* Economic_TestApp.swift */,
+			);
+			path = EconomicTest;
+			sourceTree = "<group>";
+		};
+		842B07732F8E72D4002ADA46 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				842B07752F8E7374002ADA46 /* EconomicTerm.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		842B07742F8E72E0002ADA46 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				842B07762F8E738F002ADA46 /* EconomicTermViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +90,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				842B07602F8E71B9002ADA46 /* Economic Test */,
 			);
 			name = "Economic Test";
 			packageProductDependencies = (
@@ -109,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842B07722F8E71E7002ADA46 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +148,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842B07702F8E71E7002ADA46 /* ContentView.swift in Sources */,
+				842B07712F8E71E7002ADA46 /* Economic_TestApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
