@@ -18,7 +18,7 @@
                BlueprintIdentifier = "842B075D2F8E71B9002ADA46"
                BuildableName = "Economic Test.app"
                BlueprintName = "Economic Test"
-               ReferencedContainer = "container:Math Test.xcodeproj">
+               ReferencedContainer = "container:Economic Test.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,7 +47,7 @@
             BlueprintIdentifier = "842B075D2F8E71B9002ADA46"
             BuildableName = "Economic Test.app"
             BlueprintName = "Economic Test"
-            ReferencedContainer = "container:Math Test.xcodeproj">
+            ReferencedContainer = "container:Economic Test.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -64,7 +64,7 @@
             BlueprintIdentifier = "842B075D2F8E71B9002ADA46"
             BuildableName = "Economic Test.app"
             BlueprintName = "Economic Test"
-            ReferencedContainer = "container:Math Test.xcodeproj">
+            ReferencedContainer = "container:Economic Test.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
