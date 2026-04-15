@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-class AnswerListViewModel {
-    let answers: [Answer] = [
+class AnswerListViewModel: {
+    var answers: [Answer] = [
 
     Answer(text: "Limited resources and unlimited wants", correctIndex: 1),
 

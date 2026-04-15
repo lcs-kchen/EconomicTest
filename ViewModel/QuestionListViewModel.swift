@@ -1,8 +1,8 @@
 
 import SwiftUI
 
-class QuestionListViewModel {
-    let questions: [Question] = [
+class QuestionListViewModel: {
+    var questions: [Question] = [
 
     Question(text: "What is scarcity?", options: ["Unlimited resources", "Limited resources and unlimited wants", "Government control", "High inflation"]),
 
