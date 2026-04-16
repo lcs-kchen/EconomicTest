@@ -19,7 +19,6 @@
 		842B076E2F8E71E7002ADA46 /* Economic_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Economic_TestApp.swift; sourceTree = "<group>"; };
 		842B07752F8E7374002ADA46 /* QuestionAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswer.swift; sourceTree = "<group>"; };
 		842B07762F8E738F002ADA46 /* QuestionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewModel.swift; sourceTree = "<group>"; };
-		842B07772F8E7896002ADA46 /* AnswerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +71,6 @@
 		842B07742F8E72E0002ADA46 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				842B07772F8E7896002ADA46 /* AnswerListViewModel.swift */,
 				842B07762F8E738F002ADA46 /* QuestionListViewModel.swift */,
 			);
 			path = ViewModel;

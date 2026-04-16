@@ -7,51 +7,78 @@
 
 import SwiftUI
 
-struct EconomicView: View {
-    
-    let questionViewModel = QuestionListViewModel()
-    let answerViewModel = AnswerListViewModel()
-    
+struct ContentView: View {
+    @StateObject var viewModel = QuizViewModel()
     @State private var selectedAnswer: Answer? = nil
-    
-    var body: some View {
-        VStack {
-            Text(questionViewModel.questions)
-                .bold()
-            
-            // Iterate and make a grid of answers
-            
-            LazyVGrid(
-                columns: [
-                    GridItem(),
-                    GridItem()
-                ],
-                spacing: 30
-            ) {
-                
-                ForEach(questionViewModel.answers) { answer in
-                    AnswerListViewModel(
-                        answer: answer,
-                        selectedAnswer: $selectedAnswer
-                    )
-                }
-            }
-            
+    @State private var showExplanation = false
 
-            // Show an explanation once an answer is selected...
-            if let selectedAnswer = selectedAnswer {
-                Text(selectedAnswer.explanation)
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
-                    .padding(.top, 10)
-                    .multilineTextAlignment(.center)
+    var body: some View {
+        VStack(alignment: .leading, spacing: 20) {
+
+            Text(viewModel.questions[viewModel.currentIndex].text)
+                .font(.title2)
+                .bold()
+
+            ForEach(viewModel.questions[viewModel.currentIndex].answers) { answer in
+                Button(action: {
+                    selectedAnswer = answer
+                    showExplanation = true
+                }) {
+                    HStack {
+                        Text(answer.text)
+                            .foregroundColor(.primary)
+                        Spacer()
+                    }
+                    .padding()
+                    .background(buttonColor(for: answer))
+                    .cornerRadius(10)
+                }
+                .disabled(showExplanation) // prevent changing answer after selection
             }
+
+            if showExplanation, let selected = selectedAnswer {
+                Text(selected.explanation)
+                    .padding()
+                    .foregroundColor(selected.isCorrect ? .green : .red)
+            }
+
             Spacer()
-            
+
+            if showExplanation {
+                Button("Next Question") {
+                    goToNextQuestion()
+                }
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(Color.blue)
+                .foregroundColor(.white)
+                .cornerRadius(10)
+            }
         }
-        .navigationTitle("Practice")
+        .padding()
     }
+
+    private func buttonColor(for answer: Answer) -> Color {
+        guard showExplanation else { return Color.gray.opacity(0.2) }
+
+        if answer.id == selectedAnswer?.id {
+            return answer.isCorrect ? Color.green.opacity(0.4) : Color.red.opacity(0.4)
+        }
+
+        return Color.gray.opacity(0.2)
     }
+
+    private func goToNextQuestion() {
+        if viewModel.currentIndex < viewModel.questions.count - 1 {
+            viewModel.currentIndex += 1
+        } else {
+            viewModel.currentIndex = 0 // restart or handle completion
+        }
+        selectedAnswer = nil
+        showExplanation = false
+    }
+}
+
 
 //#Preview {
 //    ContentView()
